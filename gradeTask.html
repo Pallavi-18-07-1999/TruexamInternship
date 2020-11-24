@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Phozogy Template">
+    <meta name="keywords" content="Phozogy, unica, creative, html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Phozogy | Template</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Quantico:400,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap" rel="stylesheet">
+
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="css/elegant-icons.css" type="text/css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
+    <link rel="stylesheet" href="css/magnific-popup.css" type="text/css">
+    <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+
+<body>
+    <!-- Page Preloder -->
+    <div id="preloder">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Header Section Begin -->
+    <header class="header-section header-normal">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="logo">
+                        <a href="./index.html">
+                            <img src="img/logo.png" alt="">
+                        </a>
+                    </div>
+                    <nav class="nav-menu mobile-menu">
+                        <ul>
+                            <li><a href="./index.html">Home</a></li>
+                            <li><a href="./about.html">About</a></li>
+                         
+                            <li><a href="./RegisterPage.html">Careers</a></li>
+                           <li class="active"><a href="./LoginPage.html">Login</a></li>
+                            <li><a href="./contact.html">Contact</a></li>
+                        </ul>
+                    </nav>
+                 
+                    <div id="mobile-menu-wrap"></div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Header End -->
+
+    <!-- Breadcrumb Begin -->
+    <div class="breadcrumb-option spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="bo-links">
+                        <a href="./index.html"><i class="fa fa-home"></i> Home</a>
+                        <span>Blog</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Breadcrumb End -->
+       
+
+     
+ 
+      <center>
+    <table id='table' style="border:1px solid black;">
+     <th style="border:1px solid black;"> SNO.</th>
+     <th style="border:1px solid black;">Task Name</th>
+     <th style="border:1px solid black;">Grade It</th>
+     </table>
+     </center>
+     <ul id='images'></ul>
+    <!-- Footer Section Begin -->
+    <footer class="footer-section">
+   <footer class="footer-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="fs-about">
+                        <div class="fa-logo">
+                            <a href="#">
+                                <img src="img/f-logo.png" alt="">
+                            </a>
+                        </div>
+                        <p>Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                            et dolore magna aliqua.</p>
+                        <div class="fa-social">
+                            <a href="#"><i class="fa fa-facebook"></i></a>
+                            <a href="#"><i class="fa fa-twitter"></i></a>
+                            <a href="#"><i class="fa fa-youtube-play"></i></a>
+                            <a href="#"><i class="fa fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div style="float:left;" class="col-lg-3 col-md-6 col-sm-6"  >
+                    <div style="float:right;" class="fs-widget" >
+                      <h5>Quick links</h5>
+                        <ul>
+                            <li><a href="./index.html">Home</a></li>
+                            <li><a href="./about.html">About</a></li>
+                             <li><a href="./RegisterPage.html">Careers</a></li>
+                           
+                        </ul>
+                        <ul>
+                           
+                            <li><a href="./LoginPage.html">Login</a></li>
+                           <li><a href="./contact.html">Contact</a></li>  
+                        </ul>
+                    </div>
+                </div>
+               
+                <div class="col-lg-12">
+                    <div class="copyright-text">
+                        <p>
+  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved
+               </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Section End -->
+
+    <!-- Search model Begin -->
+    <div class="search-model">
+        <div class="h-100 d-flex align-items-center justify-content-center">
+            <div class="search-close-switch">+</div>
+            <form class="search-model-form">
+                <input type="text" id="search-input" placeholder="Search here.....">
+            </form>
+        </div>
+    </div>
+    <!-- Search model end -->
+
+    <!-- Js Plugins -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/isotope.pkgd.min.js"></script>
+    <script src="js/masonry.pkgd.min.js"></script>
+    <script src="js/jquery.slicknav.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script>
+     <script>
+      function fetchTasks()
+      {
+       var xmlHttpRequest=new XMLHttpRequest();
+        xmlHttpRequest.onreadystatechange=function()
+        {
+       if(this.readyState==4 && this.status==200)
+       {
+       var response=JSON.parse(this.responseText)
+       alert(this.responseText);
+       var table=document.getElementById('table');
+        var textnode;
+        var i=0;
+      
+       for(var entry in response.response)
+       {
+       var tr=document.createElement("tr");
+       textnode=document.createTextNode((i+1)+".");
+       var td=document.createElement("td");
+       td.style.border="1px solid black";
+       td.appendChild(textnode);
+       tr.appendChild(td);
+       td=document.createElement("td");
+       textnode=document.createTextNode(response.response[entry]);
+        td.appendChild(textnode);
+       tr.appendChild(td);
+        td=document.createElement("td");
+      var button=document.createElement("button");
+       textnode=document.createTextNode("Grade It");
+       button.appendChild(textnode);
+      button.onclick=function()
+      {
+     
+      xmlHttpRequest=new XMLHttpRequest();
+        xmlHttpRequest.onreadystatechange=function()
+        {
+       if(this.readyState==4 && this.status==200)
+       {
+       document.getElementById('table').style.display='none';  
+       alert(this.responseText);
+       var response=JSON.parse(this.responseText);
+       var images=document.getElementById('images');
+       var sno=1;
+       var id="iii";
+        var names=[];
+       for(var entry in response.response)
+       {
+       var li=document.createElement("li");
+       var img=document.createElement("img");
+        img.src="data:image/jpg;base64,"+response.response[entry].encodedString;
+       names[sno-1]=response.response[entry].stud_name;
+       li.appendChild(img);
+       images.appendChild(li);
+       var br=document.createElement("br");
+       li.appendChild(br);
+       li.appendChild(br);
+      var label=document.createElement("label"); 
+      textnode=document.createTextNode("Score(0-10):");
+      label.appendChild(textnode);
+      li.appendChild(label);
+      var input=document.createElement("input");
+      input.type="text"; 
+      input.id=id+sno;
+      sno+=1;
+      li.appendChild(input);
+       var br=document.createElement("br");
+       li.appendChild(br);
+      var button=document.createElement("button");
+      textnode=document.createTextNode("Upload scores");
+      button.appendChild(textnode);
+       li.appendChild(button);
+       button.onclick=function()
+       {
+       
+       var xmlHttpRequest=new XMLHttpRequest();
+       var scores=[];
+      
+       data=new marks();  
+       
+       for(var k=0;k<sno-1;k++) 
+       {
+       var elem="iii"+k+1;
+       scores[k]=document.getElementById(elem).value;
+      
+       }  
+       data.scores=scores;
+      data.stud_name=names;
+       xmlHttpRequest.onreadystatechange=function()
+       {
+       if(this.readyState==4 && this.status==200)
+       {
+       if(JSON.parse(this.responseText).success)
+       {
+       }
+       else
+       {
+       }
+       }
+       }
+       
+       xmlHttpRequest.open("POST","/phozogy-master/upload-score",true);
+       xmlHttpRequest.send(JSON.stringify(data));
+       }
+       }
+        
+       }
+       }
+      
+      xmlHttpRequest.open("GET","/phozogy-master/get-responses?task_name="+response.response[entry],true);
+      xmlHttpRequest.send();
+     
+       
+      }
+       button.value="Grade Task";
+        td.appendChild(button);
+       tr.appendChild(td);
+       table.appendChild(tr);
+       i+=1;
+       }
+       }
+       }
+      xmlHttpRequest.open("GET","/phozogy-master/task-info",true);
+      xmlHttpRequest.send();
+      }
+      function marks()
+      {
+      this.scores=[];
+      this.stud_name=[];
+      }
+      window.addEventListener('load',fetchTasks);
+     </script>
+</body>
+
+</html>
