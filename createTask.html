@@ -189,7 +189,7 @@
        var file=document.getElementById("img-file").files[0];
        formData.append("filename",file);
        formData.append("name_of_file",file.name);
-       xmlHttpRequest.open("POST","/phozogy-master/create-task",true);
+       xmlHttpRequest.open("POST","./create-task",true);
        xmlHttpRequest.send(formData);
       }
      </script>
