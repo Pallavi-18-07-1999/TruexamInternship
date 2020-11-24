@@ -255,7 +255,7 @@
        }
        }
        
-       xmlHttpRequest.open("POST","/phozogy-master/upload-score",true);
+       xmlHttpRequest.open("POST","./upload-score",true);
        xmlHttpRequest.send(JSON.stringify(data));
        }
        }
@@ -263,7 +263,7 @@
        }
        }
       
-      xmlHttpRequest.open("GET","/phozogy-master/get-responses?task_name="+response.response[entry],true);
+      xmlHttpRequest.open("GET","./get-responses?task_name="+response.response[entry],true);
       xmlHttpRequest.send();
      
        
@@ -276,7 +276,7 @@
        }
        }
        }
-      xmlHttpRequest.open("GET","/phozogy-master/task-info",true);
+      xmlHttpRequest.open("GET","./task-info",true);
       xmlHttpRequest.send();
       }
       function marks()
