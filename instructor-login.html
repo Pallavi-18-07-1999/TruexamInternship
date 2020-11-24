@@ -172,12 +172,12 @@
      if(this.status==200 && this.readyState==4)
      {
      if(JSON.parse(this.responseText).success==true)
-     window.location.href="/phozogy-master/instructor-page.html";
+     window.location.href="./instructor-page.html";
      else
      document.getElementById('errorSpan').innerHTML=JSON.parse(this.responseText).exception;
      }
      }
-     xmlHttpRequest.open("GET","/phozogy-master/login-instructor?name="+name.value+"&password="+password.value,true);
+     xmlHttpRequest.open("GET","./login-instructor?name="+name.value+"&password="+password.value,true);
      xmlHttpRequest.send();
      }
     </script>
